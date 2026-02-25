@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SQL Query Optimization Techniques | Spandana Parchuru</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../assets/css/main.css">
+
+<style>
+
+/* Remove template hero styling */
+body {
+  background: #f8f9fa;
+}
+
+/* Clean Article Container */
+.article-wrapper {
+  max-width: 820px;
+  margin: 100px auto;
+  padding: 60px 60px 70px 60px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* Typography */
+.article-wrapper h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  color: #1f2933;
+}
+
+.article-wrapper h2 {
+  font-size: 1.4em;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #243b53;
+}
+
+.article-wrapper p {
+  font-size: 1.05em;
+  line-height: 1.9em;
+  color: #52606d;
+  margin-bottom: 20px;
+}
+
+.article-wrapper ul {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  color: #52606d;
+}
+
+.article-wrapper li {
+  margin-bottom: 8px;
+}
+
+/* Subtle Divider */
+.article-divider {
+  height: 1px;
+  background: #e4e7eb;
+  margin: 40px 0;
+}
+
+/* Back Button */
+.back-link {
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #003336;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="article-wrapper">
+
+    <h1>SQL Query Optimization Techniques for Production Systems</h1>
+
+  <p>
+    Slow SQL queries are one of the most common causes of production performance degradation. 
+    Effective optimization requires understanding execution plans, indexing strategies, 
+    and workload patterns.
+  </p>
+
+  <h2>1. Analyze Execution Plans</h2>
+  <p>
+    Execution plans reveal how the database engine processes a query. 
+    Look for full table scans, expensive joins, and missing indexes.
+  </p>
+
+  <h2>2. Index Strategy</h2>
+  <ul>
+    <li>Create indexes on high-selectivity columns</li>
+    <li>Avoid over-indexing (impacts writes)</li>
+    <li>Use composite indexes strategically</li>
+  </ul>
+
+  <h2>3. Eliminate Anti-Patterns</h2>
+  <ul>
+    <li>SELECT *</li>
+    <li>Unbounded queries</li>
+    <li>Functions in WHERE clauses</li>
+  </ul>
+
+  <h2>4. Query Refactoring</h2>
+  <p>
+    Replace nested subqueries with JOINs when appropriate. 
+    Use pagination for large result sets.
+  </p>
+
+  <h2>5. Benchmarking</h2>
+  <p>
+    Always validate improvements under production-like load. 
+    A 20–30% improvement in response time can significantly reduce escalation rates.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    Query optimization is not a one-time task. 
+    It is a continuous process aligned with evolving data volume and user demand.
+  </p>
+
+ <a href="../index.html#learnings" onclick="sessionStorage.setItem('scrollTarget','learnings')">
+
+</div>
+
+</body>
+</html>
